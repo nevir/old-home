@@ -1,4 +1,5 @@
 [
   {"keys": ["super+ctrl+]"], "command": "abacus"},
-  {"keys": ["super+ctrl+l"], "command": "wrap_lines_plus"}
+  {"keys": ["super+ctrl+w"], "command": "wrap_lines_plus"},
+  {"keys": ["super+ctrl+l"], "command": "lorem_ipsum" }
 ]
