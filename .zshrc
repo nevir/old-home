@@ -25,3 +25,6 @@ alias rake="noglob bundled_rake"
 
 # Stop co-opting `!`, I'd rather have more exciting comments without launching vim!
 setopt nobanghist
+
+# Autocorrect is annoying as hell.
+unsetopt correct_all
