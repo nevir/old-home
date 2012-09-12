@@ -1,0 +1,16 @@
+[credential]
+	helper = osxkeychain
+[include]
+	path = .gitconfig.personal
+[color]
+	ui = auto
+[alias]
+	br = branch
+	co = checkout
+	st = status
+	cp = cherry-pick
+	aa = add --all
+	l = log --graph --abbrev-commit --date=relative
+	sl = stash
+[url "https://github.com/"]
+	insteadOf = "gh:"
