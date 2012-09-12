@@ -1,0 +1,18 @@
+{
+	"auto_upgrade": false,
+	"installed_packages":
+	[
+		"Abacus",
+		"CoffeeScript",
+		"DetectSyntax",
+		"Git",
+		"GitHubinator",
+		"IcedCoffeeScript",
+		"Package Control",
+		"RSpec",
+		"Ruby Slim",
+		"Sass",
+		"SideBarEnhancements",
+		"Theme - Soda"
+	]
+}
