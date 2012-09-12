@@ -22,3 +22,6 @@ source $ZSH/oh-my-zsh.sh
 
 # the bundler and rake plugins don't coexist nicely; I need to submit a patch!
 alias rake="noglob bundled_rake"
+
+# Stop co-opting `!`, I'd rather have more exciting comments without launching vim!
+setopt nobanghist
