@@ -1,6 +1,6 @@
 # Welcome to my home
 
-Take a seat, check out some of my configuration, or all of it if you please.
+Take a seat, check out some of my configuration - or all of it, should it please you.
 
 Perhaps you'd like it all?
 
