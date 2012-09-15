@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>action</key>
+	<true/>
+	<key>background</key>
+	<true/>
+	<key>category</key>
+	<string>APPLESCRIPTS</string>
+	<key>command</key>
+	<string>on alfred_script(q)
+  tell application "Notes"
+    tell account "iCloud"
+      tell folder "Interruptions"
+        set date_string to date string of (current date)
+
+        if not (exists note date_string) then
+          make new note with properties {name:date_string, body:"&lt;strong&gt;" &amp; date_string &amp; "&lt;/strong&gt;&lt;br/&gt;"}
+        end if
+
+        tell note date_string
+          set body to body &amp; "&lt;br/&gt; • &lt;em&gt;" &amp; (time string of (current date)) &amp; "&lt;/em&gt;: &lt;strong&gt;" &amp; q &amp; "&lt;/strong&gt;"
+        end tell
+      end tell
+    end tell
+  end tell
+end alfred_script</string>
+	<key>disabled</key>
+	<false/>
+	<key>keyword</key>
+	<string>i</string>
+	<key>parameter</key>
+	<integer>0</integer>
+	<key>subtitle</key>
+	<string>Who is interrupting</string>
+	<key>title</key>
+	<string>Start Interruption</string>
+</dict>
+</plist>

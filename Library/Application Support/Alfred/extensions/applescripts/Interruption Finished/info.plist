@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>action</key>
+	<true/>
+	<key>background</key>
+	<true/>
+	<key>category</key>
+	<string>APPLESCRIPTS</string>
+	<key>command</key>
+	<string>on alfred_script(q)
+  tell application "Notes"
+    tell account "iCloud"
+      tell folder "Interruptions"
+        tell note (date string of (current date))
+          set body to body &amp; ", " &amp; q &amp; " &lt;em&gt;(" &amp; (time string of (current date)) &amp; ")&lt;/em&gt;"
+        end tell
+      end tell
+    end tell
+  end tell
+end alfred_script</string>
+	<key>disabled</key>
+	<false/>
+	<key>keyword</key>
+	<string>if</string>
+	<key>parameter</key>
+	<integer>0</integer>
+	<key>subtitle</key>
+	<string>What was the reason for the interruption?</string>
+	<key>title</key>
+	<string>Interruption Finished</string>
+</dict>
+</plist>

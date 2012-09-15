@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>action</key>
+	<false/>
+	<key>background</key>
+	<true/>
+	<key>category</key>
+	<string>APPLESCRIPTS</string>
+	<key>command</key>
+	<string>on alfred_script(query)
+	  tell application &quot;System Events&quot; to set running_count to count (every process whose name is &quot;Reminders&quot;)
+	  tell application &quot;Reminders&quot; to make new reminder with properties { name: query }
+	  if running_count &lt; 1 then
+	    tell application &quot;Reminders&quot; to quit
+	  else
+	    tell application &quot;Reminders&quot; to activate
+	  end if
+	end alfred_script
+	</string>
+	<key>disabled</key>
+	<false/>
+	<key>keyword</key>
+	<string>r</string>
+	<key>parameter</key>
+	<integer>2</integer>
+	<key>subtitle</key>
+	<string>Create a reminder in Apple Reminders</string>
+	<key>title</key>
+	<string>Create reminder</string>
+</dict>
+</plist>

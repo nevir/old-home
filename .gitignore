@@ -4,4 +4,9 @@
 !Library/Application Support/Sublime Text 2/
 !Library/Application Support/Sublime Text 2/Packages/
 !Library/Application Support/Sublime Text 2/Packages/User/
+!Library/Application Support/Alfred/
+!Library/Application Support/Alfred/extensions/
+!Library/Application Support/Alfred/extensions/*/
+!Library/Application Support/Alfred/extensions/*/*/
+!Library/Application Support/Alfred/extensions/*/*/*
 !Library/Preferences/
