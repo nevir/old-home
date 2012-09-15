@@ -10,6 +10,9 @@ ZSH_THEME="robbyrussell"
 # Case-sensitive tab completion.
 CASE_SENSITIVE="true"
 
+# Let me set my own terminal titles, thank you very much.
+DISABLE_AUTO_TITLE="true"
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(brew bundler gem git heroku knife npm pip rbenv redis-cli sublime)
