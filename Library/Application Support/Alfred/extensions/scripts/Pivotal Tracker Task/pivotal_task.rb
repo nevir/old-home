@@ -1,15 +1,20 @@
 require 'net/http'
 require 'yaml'
 
-INPUT = ARGV.pop
 CONFIG_PATH = File.join(ENV["HOME"], ".alfred_pivotal_config")
 
-if INPUT =~ /^(feature|bug|chore|release)\s+(.+)/
+input = ARGV.pop
+if input.include? '--edit'
+  OPEN_IN_BROWSER = true
+  input = input.gsub('--edit', '').strip
+end
+
+if input =~ /^(feature|bug|chore|release)\s+(.+)/
   STORY_TYPE = $1
   STORY_NAME = $2
 else
   STORY_TYPE = "feature"
-  STORY_NAME = INPUT
+  STORY_NAME = input
 end
 
 def prompt(message)
@@ -50,7 +55,11 @@ result = `curl -H "X-TrackerToken: #{config['auth_token']}" -X POST -H "Content-
   http://www.pivotaltracker.com/services/v3/projects/#{config['project_id']}/stories`
 
 if result =~ /<url>(http:\/\/www.pivotaltracker.com\/story\/show\/\d+)<\/url>/
-  puts $1
+  if OPEN_IN_BROWSER
+    `open "#{$1}"`
+  else
+    puts $1
+  end
 end
 
 
