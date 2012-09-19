@@ -1,0 +1,7 @@
+# You can require your additional core gems here.
+require 'consular/osx'
+
+Consular.configure do |c|
+  c.global_path    = '~/.config/consular'
+  c.default_editor = '/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+end
