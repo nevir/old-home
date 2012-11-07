@@ -40,3 +40,6 @@ export RUBY_GC_MALLOC_LIMIT=50000000
 
 # nvm!
 source ~/.nvm/nvm.sh
+
+# Expose Python.framework modules to other Pythons, too.
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
