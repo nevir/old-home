@@ -1,9 +1,9 @@
 {
-	"font_face": "Droid Sans Mono",
-  "font_size": 12,
 	"auto_complete_commit_on_tab": true,
 	"drag_text": false,
 	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Droid Sans Mono",
+	"font_size": 12.0,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
