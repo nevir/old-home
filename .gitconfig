@@ -10,7 +10,8 @@
 	st = status
 	cp = cherry-pick
 	aa = add --all
-	l = log --graph --abbrev-commit --date=relative
+	l  = log --graph --decorate --pretty=oneline --abbrev-commit
+	la = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	sl = stash
 [url "https://github.com/"]
 	insteadOf = "gh:"
