@@ -43,3 +43,6 @@ source ~/.nvm/nvm.sh
 
 # Expose Python.framework modules to other Pythons, too.
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+
+# Ack all the things!
+alias ack="ack -a"
