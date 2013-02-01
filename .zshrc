@@ -46,3 +46,6 @@ export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
 # Ack all the things!
 alias ack="ack -a"
+
+# ALways have a 1.9 rubinius
+export RBXOPT=-X19
