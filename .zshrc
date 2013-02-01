@@ -15,7 +15,7 @@ DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(brew bundler gem git heroku knife npm pip rbenv redis-cli sublime)
+plugins=(brew bundler gem git heroku knife npm pip redis-cli sublime)
 
 # Homebrew takes precedence; we also set our path up before loading Oh My ZSH so that
 # it can pick up on homebrew-installed binaries
@@ -49,3 +49,8 @@ alias ack="ack -a"
 
 # ALways have a 1.9 rubinius
 export RBXOPT=-X19
+
+# chruby
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
+chruby 1.9.3-p374
