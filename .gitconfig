@@ -13,6 +13,7 @@
 	l  = log --graph --decorate --pretty=oneline --abbrev-commit
 	la = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	sl = stash
+	pp = !git pull --rebase && git push
 [url "https://github.com/"]
 	insteadOf = "gh:"
 [core]
