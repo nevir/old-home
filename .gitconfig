@@ -18,5 +18,6 @@
 	insteadOf = "gh:"
 [core]
 	quotepath = false
+	excludesfile = /Users/ian/.gitignore.global
 [push]
 	default = simple
