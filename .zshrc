@@ -53,4 +53,4 @@ export RBXOPT=-X19
 # chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
-chruby 1.9.3-p374
+chruby 1.9.3

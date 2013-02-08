@@ -18,3 +18,5 @@
 	insteadOf = "gh:"
 [core]
 	quotepath = false
+[push]
+	default = simple
