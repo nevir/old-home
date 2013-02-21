@@ -57,3 +57,7 @@ chruby 1.9.3
 
 # Allow local path bins to take control
 export PATH=bin:$PATH
+
+# `hub`
+eval "$(hub alias -s)"
+source /usr/local/share/zsh/site-functions/_hub
