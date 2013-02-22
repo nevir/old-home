@@ -21,3 +21,5 @@
 	excludesfile = /Users/ian/.gitignore.global
 [push]
 	default = simple
+[hub]
+	protocol = https
