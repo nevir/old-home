@@ -53,7 +53,10 @@ export RBXOPT=-X19
 # chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
-chruby 1.9.3
+# Ideally:
+# chruby 1.9.3
+# Waiting on https://github.com/postmodern/chruby/issues/104
+chruby 1.9.3-p392
 
 # Allow local path bins to take control
 export PATH=bin:$PATH
