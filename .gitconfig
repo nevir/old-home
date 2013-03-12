@@ -1,9 +1,5 @@
-[credential]
-	helper = osxkeychain
-[include]
-	path = .gitconfig.personal
-[color]
-	ui = auto
+[branch]
+	autosetuprebase = always
 [alias]
 	br = branch
 	co = checkout
@@ -16,9 +12,14 @@
 	pp = !git pull --rebase && git push
 [url "https://github.com/"]
 	insteadOf = "gh:"
+[credential]
+	helper = osxkeychain
+[color]
+	ui = auto
 [core]
 	quotepath = false
-	excludesfile = /Users/ian/.gitignore.global
+[include]
+	path = .gitconfig.personal
 [push]
 	default = simple
 [hub]
