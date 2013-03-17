@@ -15,7 +15,7 @@ DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(brew bundler gem git heroku knife npm pip redis-cli sublime)
+plugins=(brew gem git heroku knife npm pip redis-cli sublime)
 
 # Homebrew takes precedence; we also set our path up before loading Oh My ZSH so that
 # it can pick up on homebrew-installed binaries
