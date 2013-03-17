@@ -64,3 +64,7 @@ export PATH=bin:$PATH
 # `hub`
 eval "$(hub alias -s)"
 source /usr/local/share/zsh/site-functions/_hub
+
+# Ugh, go loves a global env.
+export GOPATH=~/go
+export PATH=$GOPATH/bin:$PATH
