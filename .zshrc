@@ -15,16 +15,13 @@ DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(brew gem git heroku knife npm pip redis-cli sublime)
+plugins=(brew gem git heroku knife npm pip rake redis-cli sublime)
 
 # Homebrew takes precedence; we also set our path up before loading Oh My ZSH so that
 # it can pick up on homebrew-installed binaries
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 
 source $ZSH/oh-my-zsh.sh
-
-# the bundler and rake plugins don't coexist nicely; I need to submit a patch!
-alias rake="noglob bundled_rake"
 
 # Stop co-opting `!`, I'd rather have more exciting comments without launching vim!
 setopt nobanghist

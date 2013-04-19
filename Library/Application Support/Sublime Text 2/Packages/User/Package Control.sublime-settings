@@ -3,6 +3,7 @@
 	"installed_packages":
 	[
 		"Abacus",
+		"AutoWrap",
 		"CoffeeScript",
 		"DetectSyntax",
 		"Git",
@@ -12,6 +13,8 @@
 		"Jade",
 		"LoremIpsum",
 		"Package Control",
+		"Python Flake8 Lint",
+		"Python PEP8 Autoformat",
 		"RSpec",
 		"Ruby Slim",
 		"ruby-slim.tmbundle",
