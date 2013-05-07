@@ -68,3 +68,8 @@ fi
 # Ugh, go loves a global env.
 export GOPATH=~/go
 export PATH=$GOPATH/bin:$PATH
+
+# Do any custom/private stuff
+if [[ -e ~/.zshrc.personal ]]; then
+  source ~/.zshrc.personal
+fi
