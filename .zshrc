@@ -36,7 +36,9 @@ export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=50000000
 
 # nvm!
-source ~/.nvm/nvm.sh
+if [[ -e ~/.nvm/nvm.sh ]]; then
+  source ~/.nvm/nvm.sh
+fi
 
 # Expose Python.framework modules to other Pythons, too.
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
@@ -48,19 +50,20 @@ alias ack="ack -a"
 export RBXOPT=-X19
 
 # chruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
-# Ideally:
-# chruby 1.9.3
-# Waiting on https://github.com/postmodern/chruby/issues/104
-chruby 1.9.3-p392
+if [[ -d /usr/local/opt/chruby/ ]]; then
+  source /usr/local/opt/chruby/share/chruby/chruby.sh
+  source /usr/local/opt/chruby/share/chruby/auto.sh
+  chruby 2.0.0
+fi
 
 # Allow local path bins to take control
 export PATH=bin:$PATH
 
 # `hub`
-eval "$(hub alias -s)"
-source /usr/local/share/zsh/site-functions/_hub
+if [[ -e `which hub` ]]; then
+  eval "$(hub alias -s)"
+  source /usr/local/share/zsh/site-functions/_hub
+fi
 
 # Ugh, go loves a global env.
 export GOPATH=~/go
