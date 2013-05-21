@@ -19,7 +19,7 @@ plugins=(brew gem git heroku knife npm pip rake redis-cli sublime)
 
 # Homebrew takes precedence; we also set our path up before loading Oh My ZSH so that
 # it can pick up on homebrew-installed binaries
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 
 source $ZSH/oh-my-zsh.sh
 
